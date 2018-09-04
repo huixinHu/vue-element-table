@@ -13,6 +13,7 @@
                 @tableMultiSelectChange="handleMultiSelectChange">
     </base-table>
 
+<<<<<<< HEAD
     <div class="form">
       <base-form :form-config="formConfig"
                  ref="baseform_data">
@@ -20,11 +21,14 @@
       <el-button @click="submit">提交</el-button>
     </div>
 
+=======
+>>>>>>> 50cbb6f2861af9470a55f384b86a2575afc942a7
   </div>
 </template>
 
 <script>
 // 导入组件和配置文件
+<<<<<<< HEAD
 import { default as baseTable } from '@/components/baseTable/baseTable'
 import tableConfig from '@/components/baseTable/index.js'
 
@@ -39,6 +43,17 @@ export default {
   data () {
     return {
       // ----------------表格配置部分
+=======
+import { default as baseTable } from '@/components/baseTable'
+import tableConfig from '@/components/index.js'
+
+export default {
+  components: {
+    baseTable
+  },
+  data () {
+    return {
+>>>>>>> 50cbb6f2861af9470a55f384b86a2575afc942a7
       // 配置
       config: tableConfig.config,
       // 数据源
@@ -58,10 +73,14 @@ export default {
         }
       ],
       // 页大小
+<<<<<<< HEAD
       pageSize: 10,
 
       // ---------------表单配置部分
       formConfig: formConfig.config
+=======
+      pageSize: 10
+>>>>>>> 50cbb6f2861af9470a55f384b86a2575afc942a7
     }
   },
   computed: {
@@ -89,17 +108,23 @@ export default {
     // 多选方法
     handleMultiSelectChange (selectIndexs) {
 
+<<<<<<< HEAD
     },
     submit () {
       let formdata = this.$refs.baseform_data.formData // 得到数据源
       console.log(formdata)
+=======
+>>>>>>> 50cbb6f2861af9470a55f384b86a2575afc942a7
     }
   }
 }
 </script>
 
 <style>
+<<<<<<< HEAD
 .form {
   width: 800px;
 }
+=======
+>>>>>>> 50cbb6f2861af9470a55f384b86a2575afc942a7
 </style>
